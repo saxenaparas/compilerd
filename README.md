@@ -46,6 +46,15 @@ Compilerd is a online code judge for evaluating code submissions passed to it. I
 This is a service that is build using nodejs and express in the backend.
 It is fully customizable and can be adjusted as per requirement. Also, it has been tried and tested on Google Cloud Run and it just works seamlessly.
 
+The frontend contains a simple ```CodeEditor``` powered by ```Monaco-Editor```, providing a robust environment for editing and viewing code with features such as syntax highlighting, code completion, and error checking.
+
+For building the Frontend the following Technologies Used:
+- ```Next.js```: A React framework for building server-side rendered and statically generated applications.
+- ```Chakra UI```: ```@chackra-ui``` A simple, modular and accessible component library that provides components to quickly build the UI of your applications.
+- ```Monaco Editor```: ```@monaco-editor``` A versatile code editor that powers Visual Studio Code, providing features like syntax highlighting, code completion, and more.
+- ```Tailwind CSS```: A utility-first CSS framework for quickly building custom designs.
+- ```Framer Motion```: A library for creating animations and gestures in React applications.
+
 
 ## Quick Usage :
 We will run the project locally and try to make a request to see a sample use case :
@@ -75,6 +84,12 @@ We will run the project locally and try to make a request to see a sample use ca
             "error": 0
         }
     ```
+  - Now, for the frontend you can either navigate directly to the ```frontend``` folder or follow these steps in your terminal:
+    * Navigate to the frontend directory: ```cd frontend```
+    * Install dependencies: ```npm install```
+    * If you encounter issues with peer dependencies, outdated packages, or compatibility with newer versions, use: ```npm install --legacy-peer-deps```
+    * Run the NextJS project: ```npm run dev```
+    * Once the server is running, you can access the application at: ```http://localhost:3001/```
 
 ## Languages supported :
   - C
