@@ -45,6 +45,13 @@ const LANGUAGES_CONFIG = {
         filename: 'solution.rb',
         memory: ALLOWED_RAM * ONE_MB,
     },
+    [GOLANG]: {
+    compile: 'go build -o solution solution.go',
+    run: './solution',
+    timeout: 10,
+    filename: 'solution.go',
+    memory: ALLOWED_RAM * ONE_MB
+    },
     [PROMPTV1]: {
         model: 'gpt-4-1106-preview',
     },
