@@ -89,7 +89,7 @@ We will run the project locally and try to make a request to see a sample use ca
     * Install dependencies: ```npm install```
     * If you encounter issues with peer dependencies, outdated packages, or compatibility with newer versions, use: ```npm install --legacy-peer-deps```
     * Run the NextJS project: ```npm run dev```
-    * Once the server is running, you can access the application at: ```http://localhost:3001/```
+    * Once the server is running, you can access the application at: ```http://localhost:3001/``` if, the docker container is running on ```http://localhost:3000/```
 
   - Here is the deployed frontend only website on Vercel, Link : <a href="https://saxenaparas-compilerd-frontend.vercel.app/"><b>saxenaparas-compilerd-frontend</b></a>
 
