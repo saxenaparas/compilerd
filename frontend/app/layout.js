@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ConpilerD",
+  title: "CompilerD",
   description: "CompilerD build by Kelvium and frontend designed by @saxenaparas",
 };
 

@@ -22,6 +22,8 @@ const Header = () => {
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                     <a className="mr-5 hover:text-gray-900">Kelvium</a>
                 </nav>
+
+                <a href="https://github.com/saxenaparas/compilerd" target='_blank'> 
                 <button className="inline-flex items-center bg-blue-950 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-gray-900 rounded text-base text-white mt-4 md:mt-0">
                     GitHub/Repo
                     <svg
@@ -36,6 +38,8 @@ const Header = () => {
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </button>
+                </a>
+                
             </div>
         </header>
     )

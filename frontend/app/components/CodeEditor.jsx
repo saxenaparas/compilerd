@@ -5,13 +5,13 @@ import { Box, HStack, VStack } from "@chakra-ui/react";
 import { Editor } from "@monaco-editor/react";
 import LanguageSelector from "./LanguageSelector";
 import { compileCode } from "../utils/helpers";
-import { files } from "../utils/testJson";
+import { testJson } from "../utils/testJson";
 import Output from "./Output";
 import Input from "./Input";
 
 const CodeEditor = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("C");
-  const file = files[selectedLanguage];
+  const file = testJson[selectedLanguage];
   const [code, setCode] = useState(file.value);
   const [inputValue, setInputValue] = useState("");
   const [output, setOutput] = useState();
@@ -29,7 +29,7 @@ const CodeEditor = () => {
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
-    setCode(files[language]?.value);
+    setCode(testJson[language]?.value);
   };
   
   function handleEditorDidMount(editor) {
