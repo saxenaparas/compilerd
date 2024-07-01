@@ -212,6 +212,46 @@ const testCases = [
         },
     },
     {
+        name: 'golang : hello world',
+        reqObject: {
+            language: 'golang',
+            script:
+                'package main\n' +
+                'import "fmt"\n' +
+                'func main() {\n' +
+                '    fmt.Println("hello world")\n' +
+                '}\n',
+        },
+        expectedResponse: {
+            val: 'hello world\n',
+            status: 200,
+            error: 0,
+        },
+    },
+    {
+        name: 'golang : print stdin',
+        reqObject: {
+            language: 'golang',
+            script:
+                'package main\n' +
+                'import "fmt"\n' +
+                'import "bufio"\n' +
+                'import "os"\n' +
+                'func main() {\n' +
+                '    scanner := bufio.NewScanner(os.Stdin)\n' +
+                '    for scanner.Scan() {\n' +
+                '        fmt.Println(scanner.Text())\n' +
+                '    }\n' +
+                '}\n',
+            stdin: '1\n2\n3',
+        },
+        expectedResponse: {
+            val: '1\n2\n3\n',
+            status: 200,
+            error: 0,
+        },
+    },
+    {
         name: 'TLE test',
         reqObject: {
             language: 'nodejs',
