@@ -48,6 +48,8 @@ const Footer = () => {
                                 height={30}
                                 version="1.1"
                                 viewBox="0 0 16 16"
+                                fill='white'
+                                style={{ backgroundColor: 'black', borderRadius: '50%' }}
                             >
                                 <path
                                     fillRule="evenodd"

@@ -41,7 +41,7 @@ const CodeEditor = () => {
   }
 
   return (
-    <Box className="mb-24">
+    <Box className="mb-24 ml-10">
       <HStack spacing={4}>
         <Box w="75%">
           <LanguageSelector language={selectedLanguage} onSelect={handleLanguageChange} />
